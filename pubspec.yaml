@@ -1,0 +1,36 @@
+name: logement_cm
+description: "Annonces de logements au Cameroun : bailleurs et locataires."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  # Backend : authentification, base de données, photos, chat temps réel
+  supabase_flutter: ^2.18.3
+  # Carte OpenStreetMap (gratuite, sans carte bancaire)
+  flutter_map: ^8.3.2
+  latlong2: ^0.10.1
+  # Photos : choix dans la galerie / appareil photo avec compression
+  image_picker: ^1.2.4
+  # Cache des images sur le téléphone (économise les données mobiles)
+  cached_network_image: ^4.0.6
+  # Ouvrir WhatsApp et le composeur d'appel
+  url_launcher: ^6.3.3
+  # Position GPS du bailleur pour placer le logement
+  geolocator: ^14.1.2
+  # Formatage des prix (FCFA) et dates en français
+  intl: ^0.20.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
